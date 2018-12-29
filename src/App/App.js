@@ -3,8 +3,17 @@ import React, {
 } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HttpService from '../services/http-service';
+
+const http = new HttpService(); // Created a new constant
 
 class App extends Component {
+
+    constructor(props) {
+        super(props);
+        http.getProducts();
+    }
+
     render() {
         return ( <
             div className = "App" >
