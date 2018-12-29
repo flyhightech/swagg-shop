@@ -11,7 +11,17 @@ class App extends Component {
 
     constructor(props) {
         super(props);
-        http.getProducts();
+
+        // Bind Functions
+        this.loadData = this.loadData.bind(this);
+    }
+
+    loadData = () => {
+        http.getProducts().then(products => {
+            console.log(products);
+        }, err => {
+
+        });
     }
 
     render() {
