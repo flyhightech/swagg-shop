@@ -3,7 +3,9 @@ import React, {
 } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Product from '../product/product';
 import HttpService from '../services/http-service';
+
 
 const http = new HttpService(); // Created a new constant
 
@@ -39,7 +41,7 @@ class App extends Component {
             h1 > Welcome to the Swagg Shop. < /h1> <
             p >
             Edit < code > src / App.js < /code> and save to reload. < /
-            p > <
+            p > < div className = 'App-main' > < Product / > < /div><
             a className = "App-link"
             href = "https://reactjs.org"
             target = "_blank"
