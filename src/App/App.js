@@ -14,8 +14,13 @@ class App extends Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            products: []
+        };
         // Bind Functions
         this.loadData = this.loadData.bind(this);
+
+        this.loadData();
     }
 
     loadData = () => {

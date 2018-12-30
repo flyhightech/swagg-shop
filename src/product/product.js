@@ -21,7 +21,7 @@ class Product extends Component {
             } < /h4>   <
             p className = "card-text" > Price: $ {
                 this.props.price
-            } < /p>  <
+            } < /p>   <
             a href = "#"
             className = "btn btn-primary" > Add to wishlist < /a > < /
             div > <

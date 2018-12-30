@@ -5,3 +5,7 @@
 .product img {
     max-height: 15rem;
 }
+
+.card-block {
+    color: black;
+}
