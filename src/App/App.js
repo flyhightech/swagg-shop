@@ -41,7 +41,9 @@ class App extends Component {
             h1 > Welcome to the Swagg Shop. < /h1> <
             p >
             Edit < code > src / App.js < /code> and save to reload. < /
-            p > < div className = 'App-main' > < Product / > < /div><
+            p > < div className = "App-main" > < Product price = "4.23"
+            title = "Toy Gun"
+            imgUrl = "https://cdn.shopify.com/s/files/1/0914/4384/products/WATER_GUN_2_1024x1024.jpg?v=1508180689" / > < /div><
             a className = "App-link"
             href = "https://reactjs.org"
             target = "_blank"
