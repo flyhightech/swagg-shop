@@ -18,7 +18,9 @@
     color: white;
 }
 
-.App-main {}
+.App-main {
+    padding-top: 35px;
+}
 
 .App-link {
     color: #61dafb;
