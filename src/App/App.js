@@ -48,11 +48,13 @@ class App extends Component {
             title = "Toy Gun"
             imgUrl = "https://cdn.shopify.com/s/files/1/0914/4384/products/WATER_GUN_2_1024x1024.jpg?v=1508180689" / >
             <
-            Product price = "4.23"
+            Product className = "col-sm-4"
+            price = "4.23"
             title = "Toy Gun"
             imgUrl = "https://cdn.shopify.com/s/files/1/0914/4384/products/WATER_GUN_2_1024x1024.jpg?v=1508180689" / >
             <
-            Product price = "4.23"
+            Product className = "col-sm-4"
+            price = "4.23"
             title = "Toy Gun"
             imgUrl = "https://cdn.shopify.com/s/files/1/0914/4384/products/WATER_GUN_2_1024x1024.jpg?v=1508180689" / >
             <
