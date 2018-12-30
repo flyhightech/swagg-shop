@@ -19,16 +19,41 @@ class App extends Component {
         };
         // Bind Functions
         this.loadData = this.loadData.bind(this);
-
+        this.productList = this.productList.bind(this);
         this.loadData();
     }
 
     loadData = () => {
-        http.getProducts().then(products => {
-            console.log(products);
+        var self = this;
+        http.getProducts().then(data => {
+            self.setState({
+                products: data
+            })
         }, err => {
 
         });
+    }
+
+    productList = () => {
+        const list = this.state.products.map((product) => <
+            div className = "col-sm-4"
+            key = {
+                product._id
+            } >
+            <
+            Product title = {
+                product.title
+            }
+            price = {
+                product.price
+            }
+            imgUrl = {
+                product.imgUrl
+            }
+            /> < /
+            div >
+        );
+        return (list);
     }
 
     render() {
@@ -46,23 +71,9 @@ class App extends Component {
             h1 > Welcome to the Swagg Shop. < /h1>  <
             div className = "container App-main" >
             <
-            div className = "row" >
-            <
-            Product className = "col-sm-4"
-            price = "4.23"
-            title = "Toy Gun"
-            imgUrl = "https://cdn.shopify.com/s/files/1/0914/4384/products/WATER_GUN_2_1024x1024.jpg?v=1508180689" / >
-            <
-            Product className = "col-sm-4"
-            price = "4.23"
-            title = "Toy Gun"
-            imgUrl = "https://cdn.shopify.com/s/files/1/0914/4384/products/WATER_GUN_2_1024x1024.jpg?v=1508180689" / >
-            <
-            Product className = "col-sm-4"
-            price = "4.23"
-            title = "Toy Gun"
-            imgUrl = "https://cdn.shopify.com/s/files/1/0914/4384/products/WATER_GUN_2_1024x1024.jpg?v=1508180689" / >
-            <
+            div className = "row" > {
+                this.productList()
+            } <
             /div> < /
             div > <
             a className = "App-link"
