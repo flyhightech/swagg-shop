@@ -5,7 +5,19 @@ import './wishlist.css';
 
 class WishList extends Component {
     render() {
-        return ();
+        return (
+
+            <
+            div className = "card" >
+            <
+            div className = "card-block" >
+            <
+            h3 className = "card-title" > Wishlist < /h3>  <
+            /div>
+
+            <
+            /div>
+        );
 
     }
 }
