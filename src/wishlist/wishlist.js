@@ -12,8 +12,12 @@ class WishList extends Component {
             <
             div className = "card-block" >
             <
-            h3 className = "card-title" > Wishlist < /h3>  <
-            /div>
+            h3 className = "card-title" > Wishlist < /h3>
+            <
+            ul className = "list-group" >
+            <
+            /ul>< /
+            div >
 
             <
             /div>

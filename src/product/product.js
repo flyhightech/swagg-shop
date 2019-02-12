@@ -22,7 +22,7 @@ class Product extends Component {
             p className = "card-text" > Price: $ {
                 this.props.price
             } < /p>   <
-            a href = "#"
+            a href = "/"
             className = "btn btn-primary" > Add to wishlist < /a > < /
             div > <
             /div>
