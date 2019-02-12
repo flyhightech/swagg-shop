@@ -1,5 +1,5 @@
 .product {
-    width: 20rem;
+    max-width: 15rem;
 }
 
 .product img {

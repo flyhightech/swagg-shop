@@ -4,6 +4,9 @@ import React, {
 import logo from './logo.svg';
 import './App.css';
 import Product from '../product/product';
+import Wishlist from '../wishlist/wishlist';
+
+//Services 
 import HttpService from '../services/http-service';
 
 
@@ -69,12 +72,20 @@ class App extends Component {
             alt = "logo" / >
             <
             h1 > Welcome to the Swagg Shop. < /h1>  <
-            div className = "container App-main" >
+            div className = "container-fluid App-main" >
             <
-            div className = "row" > {
+            div className = "row" >
+            <
+            div className = "col-sm-8" > {
                 this.productList()
             } <
+            /div> <
+            div className = "col-sm-4" >
+            <
+            Wishlist / >
+            <
             /div> < /
+            div > < /
             div > <
             a className = "App-link"
             href = "https://reactjs.org"
