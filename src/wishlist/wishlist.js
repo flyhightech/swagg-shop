@@ -2,8 +2,30 @@ import React, {
     Component
 } from 'react';
 import './wishlist.css';
+import ProductCondensed from '../product-condensed/product-condensed';
 
 class WishList extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.createWishList = this.createWishList.bind(this);
+    }
+
+    createWishList = () => {
+        const list = this.state.wishList.map((product) =>
+            <
+            ProductCondensed product = {
+                product
+            }
+            key = {
+                product._id
+            }
+            />
+        );
+        return (list);
+    }
+
     render() {
         return (
 
@@ -12,10 +34,10 @@ class WishList extends Component {
             <
             div className = "card-block" >
             <
-            h3 className = "card-title" > Wishlist < /h3>
-            <
-            ul className = "list-group" >
-            <
+            h3 className = "card-title" > Wish List < /h3> <
+            ul className = "list-group" > {
+                this.createWishList()
+            } <
             /ul>< /
             div >
 
